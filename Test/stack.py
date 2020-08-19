@@ -25,7 +25,7 @@ n = int(input("Enter number of commands: "))
 for i in range(n):
     inputt = input().split()
     if inputt[0] == 'push':
-        stack.push(c[1])
+        stack.push(inputt[1])
     elif inputtinputt[0] == 'pop':
         stack.pop()
     elif inputt[0] == "max":
