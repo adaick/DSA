@@ -31,7 +31,12 @@ def treeheight(node):
 
 inp = int(input("Enter the number of nodes: "))
 root = None
-for i in range(inp):
-    data = int(input("Enter the node: "))
-    root = insert(root, data)
+print('Now enter nodes:')
+node=list(map(int,input().split()))
+
+if len(node)==inp:
+    for data in node:
+        root = insert(root, data)
+else:
+    print("you didn't entered correct node" )
 print(treeheight(root))
